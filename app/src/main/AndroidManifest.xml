@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.giada.colonnine_elettriche">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".elenco_colonnine"
+            android:label="@string/title_activity_elenco_colonnine"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nuova_colonnina"
+            android:label="@string/title_activity_nuova_colonnina"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".riga_colonnina"
+            android:label="@string/title_activity_riga_colonnina"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".dettagli_colonnina"
+            android:label="dettagli colonnina"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

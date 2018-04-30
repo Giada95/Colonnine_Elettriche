@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textVia"
+        android:layout_width="185dp"
+        android:layout_height="500dp"
+        android:contentDescription="@string/Via"
+        android:text="@string/Via"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textDistributore"
+            android:layout_width="185dp"
+            android:layout_height="500dp"
+            android:contentDescription="@string/Distributore"
+            android:text="@string/Distributore"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "480121142014",
+    "firebase_url": "https://colonnineelettriche.firebaseio.com",
+    "project_id": "colonnineelettriche",
+    "storage_bucket": "colonnineelettriche.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480121142014:android:0ca4a28a130c991d",
+        "android_client_info": {
+          "package_name": "com.example.giada.colonnine_elettriche"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480121142014-i4h6i6g5rt6tisj9t86bgj3jr87ppsg1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.giada.colonnine_elettriche",
+            "certificate_hash": "19ae4bbcb4a6d10e3eeecd754dae94f802e2778b"
+          }
+        },
+        {
+          "client_id": "480121142014-smrg6ro0ievqdm943k5co4lu8djf9p7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd25sbPex3K_IlnCOKv83L6TBTLcg2VL0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480121142014-smrg6ro0ievqdm943k5co4lu8djf9p7k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
