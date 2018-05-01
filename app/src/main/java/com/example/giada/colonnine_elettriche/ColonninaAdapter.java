@@ -52,7 +52,7 @@ public class ColonninaAdapter extends BaseAdapter {
             convertView = LayoutInflater.from(context).inflate(R.layout.activity_riga_colonnina, parent, false);
         // Ottengo gli id correnti
         TextView textIndirizzogenerico = (TextView) convertView.findViewById(R.id.textVia);
-        TextView textGestore = (TextView) convertView.findViewById(R.id.textDistributore);
+       TextView textGestore = (TextView) convertView.findViewById(R.id.textDistributore);
         TextView textSupporto = (TextView)convertView.findViewById(R.id.textSupporto);
         // Imposto i valori da visualizzare
         Colonnina colonnina = colonnine.get(position);

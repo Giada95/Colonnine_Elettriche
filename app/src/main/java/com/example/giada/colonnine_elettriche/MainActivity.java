@@ -62,9 +62,24 @@ private Button Go;
 
 
 
+        // definisco un array di stringhe
+       String[] supporti = new String[] { "combo","chademo50","type2","type22kw","scame" };
 
-        //Inizializzo Radio Group
+        // definisco un ArrayList
+        final ArrayList <String> lista = new ArrayList<String>();
+        for (int i = 0; i < supporti.length; ++i) {
+            lista.add(supporti[i]);
+        }
+        // recupero la lista dal layout
+        final ListView mylist = (ListView) findViewById(R.id.listviewSupporti);
 
+        // creo e istruisco l'adattatore
+        final ArrayAdapter <String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, lista);
+
+        // inietto i dati
+        mylist.setAdapter(adapter);
+
+//Inizializzo Radio Group
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
         radioGroup.clearCheck();
 
