@@ -11,8 +11,8 @@
 
     <TextView
         android:id="@+id/textIndirizzogenerico"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="158dp"
+        android:layout_height="63dp"
         android:layout_marginBottom="128dp"
         android:layout_marginTop="46dp"
         android:text="@string/textview"
@@ -30,8 +30,8 @@
 
         android:id="@+id/textGestore"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="281dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="268dp"
         android:layout_marginEnd="25dp"
         android:text="@string/textview"
         android:textAppearance="@style/TextAppearance.AppCompat"
@@ -41,13 +41,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/editText2"
         app:layout_constraintStart_toEndOf="@+id/imageView11"
-        app:layout_constraintTop_toBottomOf="@+id/textIndirizzogenerico"
         tools:text="Tipo Di Supporto:" />
 
     <TextView
         android:id="@+id/textSupporto"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="63dp"
         android:text="@string/textview"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/holo_green_dark"
@@ -55,14 +54,16 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/editText2"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView11"
         app:layout_constraintTop_toBottomOf="@+id/textIndirizzogenerico"
+        app:layout_constraintVertical_bias="0.1"
         tools:text="Ricarica Supportata:" />
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="150dp"
+        android:layout_height="63dp"
         android:layout_marginBottom="49dp"
         android:layout_marginTop="46dp"
         android:ems="10"
@@ -72,14 +73,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textIndirizzogenerico"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:layout_constraintVertical_chainStyle="spread"
         tools:text="Indirizzo" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="153dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="36dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/supporto"
@@ -92,21 +94,22 @@
     <EditText
         android:id="@+id/editText3"
         android:layout_width="0dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="129dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="148dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/tipo_di_ricarica"
         android:textSize="20sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textSupporto"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="37dp"
-        android:layout_height="36dp"
+        android:layout_height="40dp"
         android:layout_marginBottom="275dp"
         android:layout_marginEnd="4dp"
         android:contentDescription="@string/supporto"
@@ -119,21 +122,21 @@
     <ImageView
         android:id="@+id/imageView12"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="40dp"
         android:layout_marginBottom="36dp"
         android:layout_marginEnd="4dp"
         android:contentDescription="@string/ricarica"
         app:layout_constraintBottom_toTopOf="@+id/imageView11"
         app:layout_constraintEnd_toStartOf="@+id/textSupporto"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView13"
         app:srcCompat="@drawable/ricarica" />
 
     <ImageView
         android:id="@+id/imageView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
         android:layout_marginBottom="52dp"
         android:layout_marginEnd="7dp"
         android:layout_marginTop="46dp"

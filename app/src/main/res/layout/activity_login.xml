@@ -12,21 +12,18 @@
     tools:layout_editor_absoluteY="81dp">
 
     <TextView
-        android:id="@+id/textUsername"
+        android:id="@+id/textusername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:contentDescription="@string/username"
-        android:text="@string/textview"
+        android:text="@string/username"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="20sp"
         android:textStyle="bold|italic"
         app:layout_constrainedHeight="false"
         app:layout_constrainedWidth="false"
         app:layout_constraintBaseline_toBaselineOf="@+id/editUsername"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:text="Username:" />
-
+        app:layout_constraintStart_toStartOf="parent" />
     <TextView
         android:id="@+id/textPassw"
         android:layout_width="wrap_content"
@@ -40,7 +37,7 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/btnLogin"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textUsername" />
+        app:layout_constraintTop_toTopOf="@+id/textusername" />
 
     <TextView
         android:id="@+id/textView12"
@@ -50,7 +47,6 @@
         android:text="@string/LOGIN"
         android:textAlignment="center"
         android:textColor="@android:color/holo_green_light"
-
         android:textSize="50sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"

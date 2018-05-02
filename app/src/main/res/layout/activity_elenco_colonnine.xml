@@ -6,10 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.giada.colonnine_elettriche.elenco_colonnine">
 
-
-
-
-
     <ListView
 
         android:id="@+id/listaColonnine"
