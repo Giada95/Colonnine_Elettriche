@@ -1,5 +1,7 @@
 package com.example.giada.colonnine_elettriche;
 
+import java.io.Serializable;
+
 /**
  * Created by Giada on 24/04/2018.
  */
@@ -9,18 +11,20 @@ package com.example.giada.colonnine_elettriche;
     }
 
 
-    public class Colonnina{
+    public class Colonnina implements Serializable{
         private String Indirizzogenerico;
         private String gestore;
-
-
         private TipoSupporto supporto[];
 
         public Colonnina(){
 
         }
 
-
+        public Colonnina(String Indirizzogenerico,String gestore,TipoSupporto supporto[])
+        {this.Indirizzogenerico=Indirizzogenerico;
+        this.gestore=gestore;
+        this.supporto=supporto;
+        }
 
         public String getIndirizzogenerico() {
             return Indirizzogenerico;

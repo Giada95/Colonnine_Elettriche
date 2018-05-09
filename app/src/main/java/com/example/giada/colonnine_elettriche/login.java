@@ -26,30 +26,24 @@ import com.google.firebase.auth.FirebaseAuth;
 
 
 public class login extends AppCompatActivity {
-
     // Costanti
     private final static String TAG = "Login";
-
     // Widget
     private EditText mUsername;
     private EditText mPassw;
     private ImageButton btnLogin;
-
     // Firebase
     private FirebaseAuth mAuth;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
         // Imposto gli attributi relativi ai widget
         mUsername = (EditText)findViewById(R.id.editUsername);
         mPassw = (EditText)findViewById(R.id.editPassw);
-
+        btnLogin = (ImageButton)findViewById(R.id.btnLogin);
         // Impostazione Firebase
         mAuth = FirebaseAuth.getInstance();
-
         // Imposto il listener per il pulsante
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,13 +66,16 @@ public class login extends AppCompatActivity {
      * @param password password
      */
     private void effettuaLogin(String email, String password) {
+
+
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+
                         Log.d(TAG, "Task completato: successo = " + task.isSuccessful());
                         if (task.isSuccessful()) {
-                            Intent intent = new Intent(login.this, nuova_colonnina.class);
+                            Intent intent = new Intent(login.this, MainActivity.class);
                             startActivity(intent);
                         } else {
                             Toast.makeText(login.this, R.string.errore_login, Toast.LENGTH_SHORT).show();
@@ -87,14 +84,13 @@ public class login extends AppCompatActivity {
                 });
 
 
-        btnLogin = (ImageButton)findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             //definisco l'intenzione
-            Intent intent2 = new Intent(login.this, nuova_colonnina.class);
+            Intent intent = new Intent(login.this, nuova_colonnina.class);
             //passo all'attivazione dell'activity nuova_colonnina.java
-            startActivity(intent2);
+            startActivity(intent);
         }
     });
 }
